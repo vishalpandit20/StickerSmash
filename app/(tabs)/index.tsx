@@ -34,7 +34,7 @@ export default function Index() {
       (<View/>):
       (<View style={styles.footerContainer}>
         <Button theme='primary' label='Choose a Photo' onPress={pickImageAsync}/>
-        <Button label='use this Photo'/>
+        <Button label='use this Photo' onPress={()=>setShowAppOptions(true)}/>
       </View>)}
       
     </View>
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
   },
   imageContainer:{
     flex:1,
-    paddingTop:28,
+    // paddingTop:28,
   },
   footerContainer: {
     flex: 1 / 3,
